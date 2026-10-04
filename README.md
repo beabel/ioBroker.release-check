@@ -66,6 +66,8 @@ Limitations:
 ### 0.0.1 (2026-10-04)
 * (Maik Ries) initial release: detects adapters installed from GitHub and reports new releases without using the GitHub API
 
+Older changes: [CHANGELOG_OLD.md](CHANGELOG_OLD.md)
+
 ## License
 MIT License
 
