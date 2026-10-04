@@ -4,17 +4,17 @@
         "version": "0.0.1",
         "news": {
             "0.0.1": {
-                "en": "initial release",
-                "de": "Erstveröffentlichung",
-                "ru": "Начальная версия",
-                "pt": "lançamento inicial",
-                "nl": "Eerste uitgave",
-                "fr": "Première version",
-                "it": "Versione iniziale",
-                "es": "Versión inicial",
-                "pl": "Pierwsze wydanie",
-                "uk": "Початкова версія",
-                "zh-cn": "首次出版"
+                "en": "Initial release: reports new GitHub releases for adapters installed from GitHub.",
+                "de": "Erstveröffentlichung: meldet neue GitHub-Releases für von GitHub installierte Adapter.",
+                "ru": "Первый выпуск: сообщает о новых релизах GitHub для адаптеров, установленных с GitHub.",
+                "pt": "Primeira versão: informa novas versões do GitHub para adaptadores instalados do GitHub.",
+                "nl": "Eerste release: meldt nieuwe GitHub-releases voor adapters die vanaf GitHub zijn geïnstalleerd.",
+                "fr": "Première version : signale les nouvelles versions GitHub des adaptateurs installés depuis GitHub.",
+                "it": "Prima versione: segnala le nuove release GitHub per gli adattatori installati da GitHub.",
+                "es": "Primera versión: informa de nuevas versiones de GitHub para los adaptadores instalados desde GitHub.",
+                "pl": "Pierwsze wydanie: zgłasza nowe wydania GitHub dla adapterów zainstalowanych z GitHub.",
+                "uk": "Перший випуск: повідомляє про нові релізи GitHub для адаптерів, встановлених із GitHub.",
+                "zh-cn": "首个版本：报告从 GitHub 安装的适配器在 GitHub 上的新版本。"
             }
         },
         "titleLang": {
