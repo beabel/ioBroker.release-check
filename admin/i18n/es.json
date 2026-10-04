@@ -1,0 +1,13 @@
+{
+	"Active": "Activo",
+	"Adapters installed from the official repository or npm are ignored.": "Se ignoran los adaptadores instalados desde el repositorio oficial o npm.",
+	"Additional repositories": "Repositorios adicionales",
+	"Also report pre-releases": "Informe también sobre lanzamientos previos",
+	"Between 60 and 1440 minutes.": "Entre 60 y 1440 minutos.",
+	"Check interval (minutes)": "Intervalo de verificación (minutos)",
+	"Detect adapters installed from GitHub automatically": "Detectar adaptadores instalados desde GitHub automáticamente",
+	"GitHub repository": "repositorio de GitHub",
+	"Report tags such as 1.2.0-beta.1 as well.": "Informe también etiquetas como 1.2.0-beta.1.",
+	"Repositories to watch in addition to the detected ones, for example beabel/ioBroker.release-check.": "Repositorios a vigilar además de los detectados, por ejemplo beabel/ioBroker.release-check.",
+	"release-check adapter settings": "Configuración del adaptador para verificación de liberación"
+}

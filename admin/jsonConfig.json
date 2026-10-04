@@ -1,0 +1,70 @@
+{
+    "i18n": true,
+    "type": "panel",
+    "items": {
+        "autoDetect": {
+            "type": "checkbox",
+            "label": "Detect adapters installed from GitHub automatically",
+            "help": "Adapters installed from the official repository or npm are ignored.",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
+        "includePrereleases": {
+            "type": "checkbox",
+            "label": "Also report pre-releases",
+            "help": "Report tags such as 1.2.0-beta.1 as well.",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
+        "intervalMinutes": {
+            "type": "number",
+            "label": "Check interval (minutes)",
+            "help": "Between 60 and 1440 minutes.",
+            "min": 60,
+            "max": 1440,
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
+        "extraRepos": {
+            "type": "table",
+            "label": "Additional repositories",
+            "help": "Repositories to watch in addition to the detected ones, for example beabel/ioBroker.release-check.",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 12,
+            "lg": 12,
+            "xl": 12,
+            "items": [
+                {
+                    "type": "text",
+                    "attr": "repo",
+                    "title": "GitHub repository",
+                    "width": "70%",
+                    "filter": false,
+                    "sort": true
+                },
+                {
+                    "type": "checkbox",
+                    "attr": "enabled",
+                    "title": "Active",
+                    "width": "20%",
+                    "default": true
+                }
+            ],
+            "noDelete": false
+        }
+    }
+}

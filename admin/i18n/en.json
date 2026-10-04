@@ -1,0 +1,13 @@
+{
+	"release-check adapter settings": "Adapter settings for release-check",
+	"Detect adapters installed from GitHub automatically": "Detect adapters installed from GitHub automatically",
+	"Adapters installed from the official repository or npm are ignored.": "Adapters installed from the official repository or npm are ignored.",
+	"Also report pre-releases": "Also report pre-releases",
+	"Report tags such as 1.2.0-beta.1 as well.": "Report tags such as 1.2.0-beta.1 as well.",
+	"Check interval (minutes)": "Check interval (minutes)",
+	"Between 60 and 1440 minutes.": "Between 60 and 1440 minutes.",
+	"Additional repositories": "Additional repositories",
+	"Repositories to watch in addition to the detected ones, for example beabel/ioBroker.release-check.": "Repositories to watch in addition to the detected ones, for example beabel/ioBroker.release-check.",
+	"GitHub repository": "GitHub repository",
+	"Active": "Active"
+}

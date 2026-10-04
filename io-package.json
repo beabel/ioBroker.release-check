@@ -1,0 +1,115 @@
+{
+    "common": {
+        "name": "release-check",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "uk": "Початкова версія",
+                "zh-cn": "首次出版"
+            }
+        },
+        "titleLang": {
+            "en": "Release Check",
+            "de": "Freigabeprüfung",
+            "ru": "Проверка выпуска",
+            "pt": "Verificação de liberação",
+            "nl": "Vrijgavecontrole",
+            "fr": "Contrôle de libération",
+            "it": "Controllo del rilascio",
+            "es": "Verificación de liberación",
+            "pl": "Zwolnij kontrolę",
+            "uk": "Перевірка випуску",
+            "zh-cn": "发布检查"
+        },
+        "desc": {
+            "en": "Checks GitHub repositories for new releases of adapters that are not in the ioBroker repository and reports available updates",
+            "de": "Überprüft GitHub-Repositorys auf neue Versionen von Adaptern, die nicht im ioBroker-Repository enthalten sind, und meldet verfügbare Updates",
+            "ru": "Проверяет репозитории GitHub на наличие новых выпусков адаптеров, которых нет в репозитории ioBroker, и сообщает о доступных обновлениях.",
+            "pt": "Verifica os repositórios GitHub em busca de novos lançamentos de adaptadores que não estão no repositório ioBroker e relata atualizações disponíveis",
+            "nl": "Controleert GitHub-opslagplaatsen op nieuwe releases van adapters die zich niet in de ioBroker-opslagplaats bevinden en rapporteert beschikbare updates",
+            "fr": "Vérifie les référentiels GitHub pour les nouvelles versions d'adaptateurs qui ne figurent pas dans le référentiel ioBroker et signale les mises à jour disponibles",
+            "it": "Controlla nei repository GitHub la presenza di nuove versioni di adattatori che non si trovano nel repository ioBroker e segnala gli aggiornamenti disponibili",
+            "es": "Comprueba los repositorios de GitHub en busca de nuevas versiones de adaptadores que no están en el repositorio de ioBroker e informa las actualizaciones disponibles.",
+            "pl": "Sprawdza repozytoria GitHub pod kątem nowych wydań adapterów, których nie ma w repozytorium ioBroker i raportuje dostępne aktualizacje",
+            "uk": "Перевіряє репозиторії GitHub на наявність нових випусків адаптерів, яких немає в репозиторії ioBroker, і повідомляє про доступні оновлення",
+            "zh-cn": "检查 GitHub 存储库中是否存在 ioBroker 存储库中没有的新版本适配器，并报告可用更新"
+        },
+        "authors": [
+            "Maik Ries <iobroker@ne-xt.de>"
+        ],
+        "keywords": [
+            "github",
+            "release",
+            "update",
+            "notification"
+        ],
+        "licenseInformation": {
+            "type": "free",
+            "license": "MIT"
+        },
+        "platform": "Javascript/Node.js",
+        "icon": "release-check.png",
+        "enabled": false,
+        "extIcon": "https://raw.githubusercontent.com/beabel/ioBroker.release-check/main/admin/release-check.png",
+        "readme": "https://github.com/beabel/ioBroker.release-check/blob/main/README.md",
+        "loglevel": "info",
+        "tier": 3,
+        "mode": "daemon",
+        "type": "utility",
+        "compact": true,
+        "connectionType": "cloud",
+        "dataSource": "poll",
+        "adminUI": {
+            "config": "json"
+        },
+        "dependencies": [
+            {
+                "js-controller": ">=6.0.11"
+            }
+        ],
+        "globalDependencies": [
+            {
+                "admin": ">=7.0.23"
+            }
+        ]
+    },
+    "native": {
+        "intervalMinutes": 360,
+        "autoDetect": true,
+        "includePrereleases": false,
+        "extraRepos": []
+    },
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "info",
+            "type": "channel",
+            "common": {
+                "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "Device or service connected",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }
+    ]
+}

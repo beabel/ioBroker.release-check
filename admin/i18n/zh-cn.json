@@ -1,0 +1,13 @@
+{
+	"Active": "积极的",
+	"Adapters installed from the official repository or npm are ignored.": "从官方存储库或 npm 安装的适配器将被忽略。",
+	"Additional repositories": "附加存储库",
+	"Also report pre-releases": "还报告预发布",
+	"Between 60 and 1440 minutes.": "60 至 1440 分钟之间。",
+	"Check interval (minutes)": "检查间隔（分钟）",
+	"Detect adapters installed from GitHub automatically": "自动检测从 GitHub 安装的适配器",
+	"GitHub repository": "GitHub 存储库",
+	"Report tags such as 1.2.0-beta.1 as well.": "还报告诸如 1.2.0-beta.1 之类的标签。",
+	"Repositories to watch in addition to the detected ones, for example beabel/ioBroker.release-check.": "除了检测到的存储库之外还要监视的存储库，例如 beabel/ioBroker.release-check。",
+	"release-check adapter settings": "用于发布检查的适配器设置"
+}

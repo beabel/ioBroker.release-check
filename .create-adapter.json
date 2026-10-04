@@ -1,0 +1,47 @@
+{
+    "cli": true,
+    "target": "directory",
+    "adapterName": "release-check",
+    "title": "Release Check",
+    "description": "Checks GitHub repositories for new releases of adapters that are not in the ioBroker repository and reports available updates",
+    "keywords": [
+        "github",
+        "release",
+        "update",
+        "notification"
+    ],
+    "expert": "yes",
+    "features": [
+        "adapter"
+    ],
+    "adminFeatures": [],
+    "type": "utility",
+    "startMode": "daemon",
+    "connectionType": "cloud",
+    "dataSource": "poll",
+    "connectionIndicator": "yes",
+    "adminUi": "json",
+    "tools": [
+        "ESLint",
+        "type checking"
+    ],
+    "language": "JavaScript",
+    "releaseScript": "yes",
+    "dependabot": "yes",
+    "indentation": "Spaces (4)",
+    "quotes": "single",
+    "es6class": "yes",
+    "authorName": "Maik Ries",
+    "authorGithub": "beabel",
+    "authorEmail": "iobroker@ne-xt.de",
+    "gitRemoteProtocol": "HTTPS",
+    "gitCommit": "no",
+    "defaultBranch": "main",
+    "license": "MIT License",
+    "ciTest": "yes",
+    "replay": "C:\\Users\\Maik\\AppData\\Local\\Temp\\ca\\answers.json",
+    "nodeVersion": "20",
+    "eslintConfig": "official",
+    "devServer": "local",
+    "creatorVersion": "3.1.5"
+}
