@@ -44,6 +44,7 @@ class ReleaseCheck extends utils.Adapter {
         this.results = new Map();
         this.notified = new Map();
         this.createdIds = new Set();
+        this.announced = false;
     }
 
     /**
@@ -112,6 +113,14 @@ class ReleaseCheck extends utils.Adapter {
         this.running = true;
         try {
             const targets = await this.collectTargets();
+            if (!this.announced) {
+                this.announced = true;
+                this.log.info(
+                    targets.size
+                        ? `Watching ${targets.size} adapter(s) for new GitHub releases: ${[...targets.keys()].join(', ')}`
+                        : 'No adapters installed from GitHub found. Add repositories in the instance settings if needed.',
+                );
+            }
             if (poll) {
                 this.log.debug(`Checking ${targets.size} repositories`);
             }

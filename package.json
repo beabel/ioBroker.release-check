@@ -1,6 +1,6 @@
 {
   "name": "iobroker.release-check",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Checks GitHub repositories for new releases of adapters that are not in the ioBroker repository and reports available updates",
   "author": {
     "name": "Maik Ries",

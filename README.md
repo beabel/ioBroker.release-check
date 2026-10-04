@@ -63,6 +63,9 @@ Limitations:
     ### **WORK IN PROGRESS**
 -->
 
+### 0.0.2 (2026-10-04)
+* (Maik Ries) **ENHANCED**: the log lists the watched adapters at startup
+
 ### 0.0.1 (2026-10-04)
 * (Maik Ries) initial release: detects adapters installed from GitHub and reports new releases without using the GitHub API
 

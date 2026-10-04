@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "release-check",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "news": {
+            "0.0.2": {
+                "en": "The log now lists the adapters being watched at startup.",
+                "de": "Das Log listet beim Start die überwachten Adapter auf.",
+                "ru": "При запуске в журнале теперь перечислены отслеживаемые адаптеры.",
+                "pt": "O log agora lista os adaptadores monitorados na inicialização.",
+                "nl": "Het log toont bij het starten nu de bewaakte adapters.",
+                "fr": "Le journal liste désormais les adaptateurs surveillés au démarrage.",
+                "it": "Il log ora elenca gli adattatori monitorati all'avvio.",
+                "es": "El registro ahora muestra los adaptadores supervisados al iniciar.",
+                "pl": "Dziennik wyświetla teraz monitorowane adaptery przy starcie.",
+                "uk": "Під час запуску журнал тепер показує адаптери під наглядом.",
+                "zh-cn": "启动时日志现在会列出受监控的适配器。"
+            },
             "0.0.1": {
                 "en": "Initial release: reports new GitHub releases for adapters installed from GitHub.",
                 "de": "Erstveröffentlichung: meldet neue GitHub-Releases für von GitHub installierte Adapter.",
