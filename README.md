@@ -16,10 +16,6 @@ Reports new versions of ioBroker adapters that you installed directly from [GitH
 
 For every watched adapter it provides the installed and the latest version, the release notes and links to the release page and to the README of the new version, so you can read what changed before you update.
 
-## Installation
-
-Install the adapter from GitHub (custom URL in Admin, or `iobroker url beabel/ioBroker.release-check`), then create an instance.
-
 ## Configuration
 
 | Option | Description |
@@ -67,7 +63,7 @@ Limitations:
     ### **WORK IN PROGRESS**
 -->
 
-### **WORK IN PROGRESS**
+### 0.0.1 (2026-10-04)
 * (Maik Ries) initial release: detects adapters installed from GitHub and reports new releases without using the GitHub API
 
 ## License

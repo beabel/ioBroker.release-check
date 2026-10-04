@@ -10,6 +10,7 @@
   "homepage": "https://github.com/beabel/ioBroker.release-check",
   "license": "MIT",
   "keywords": [
+    "ioBroker",
     "github",
     "release",
     "update",
@@ -34,9 +35,9 @@
     "@iobroker/dev-server": "^0.8.0",
     "@iobroker/eslint-config": "^2.3.4",
     "@iobroker/testing": "^6.3.0",
-    "@tsconfig/node20": "^20.1.10",
+    "@tsconfig/node22": "^22.0.6",
     "@types/iobroker": "npm:@iobroker/types@^7.2.4",
-    "@types/node": "^20.19.43",
+    "@types/node": "^22.0.0",
     "typescript": "~5.9.3"
   },
   "main": "main.js",

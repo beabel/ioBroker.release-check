@@ -26,15 +26,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: ioBroker/testing-action-check@v1
+      - uses: ioBroker/testing-action-check@v2
         with:
           node-version: '22.x'
-          # Uncomment the following line if your adapter cannot be installed using 'npm ci'
-          # install-command: 'npm install'
           lint: true
 
-  # Runs adapter tests on all supported node versions and OSes
+  # Runs adapter tests on all supported node versions and OSes.
+  # Node.js 20 is intentionally not tested - engines.node in package.json
+  # requires >=22.0.0.
   adapter-tests:
+    needs: [check-and-lint]
     if: contains(github.event.head_commit.message, '[skip ci]') == false
 
     runs-on: ${{ matrix.os }}
@@ -48,13 +49,10 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           os: ${{ matrix.os }}
-          # Uncomment the following line if your adapter cannot be installed using 'npm ci'
-          # install-command: 'npm install'
 
-# Automatic npm releases use npm trusted publishing (https://docs.npmjs.com/trusted-publishers):
-# npmjs.com -> package -> Settings -> Trusted Publisher -> GitHub Actions (beabel/ioBroker.release-check, test-and-release.yml)
-
-  # Deploys the final package to NPM
+  # Deploys the final package to NPM once a version tag is pushed.
+  # Requires npm trusted publishing to be set up for this package first -
+  # see the README's "Publishing" section.
   deploy:
     needs: [check-and-lint, adapter-tests]
 
@@ -75,6 +73,4 @@ jobs:
       - uses: ioBroker/testing-action-deploy@v1
         with:
           node-version: '24.x'
-          # Uncomment the following line if your adapter cannot be installed using 'npm ci'
-          # install-command: 'npm install'
           github-token: ${{ secrets.GITHUB_TOKEN }}

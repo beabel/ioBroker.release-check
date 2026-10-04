@@ -47,6 +47,7 @@
             "Maik Ries <iobroker@ne-xt.de>"
         ],
         "keywords": [
+            "ioBroker",
             "github",
             "release",
             "update",
@@ -78,7 +79,7 @@
         ],
         "globalDependencies": [
             {
-                "admin": ">=7.0.23"
+                "admin": ">=7.6.20"
             }
         ]
     },
